@@ -34,9 +34,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- Full header(Top + middle + bottom)-->
 <div id="header"></div>
+<script> 
+		$(function(){
+			$("#header").load("header.html"); 
+		});
+</script> 
 <!-- End of full header-->
 <!-- Modal1 -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-adid="">
 			<div class="modal-dialog">
 				<!-- Modal content-->
 				<div class="modal-content">
@@ -1671,6 +1676,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--grids-->
 <!-- footer -->
 <div id="footer"></div>
+<script> 
+		$(function(){
+			$("#footer").load("footer.html"); 
+		});
+	</script> 
 <!-- //footer -->
 
 <!-- login -->
@@ -1815,12 +1825,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 	</script>
 <!-- //here ends scrolling icon -->
-<script> 
-	$(function(){
-		$("#header").load("header.html"); 
-		$("#footer").load("footer.html"); 
-	});
-</script> 
 
 <!-- for bootstrap working -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
