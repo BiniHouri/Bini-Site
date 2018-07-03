@@ -35,9 +35,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Full header(Top + middle + bottom)-->
 <div id="header"></div>
 <script> 
-		$(function(){
-			$("#header").load("header.html"); 
-		});
+	function defer(method) {
+		if (window.jQuery) {
+			method();
+		} else {
+			setTimeout(function() { defer(method) }, 50);
+		}
+	}
+
+	defer(function(){
+		$("#header").load("header.html"); 
+	})
 </script> 
 <!-- End of full header-->
 <!-- Modal1 -->
@@ -1677,10 +1685,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- footer -->
 <div id="footer"></div>
 <script> 
-		$(function(){
-			$("#footer").load("footer.html"); 
-		});
-	</script> 
+	function defer(method) {
+		if (window.jQuery) {
+			method();
+		} else {
+			setTimeout(function() { defer(method) }, 50);
+		}
+	}
+
+	defer(function(){
+		$("#footer").load("footer.html"); 
+	})
+</script> 
 <!-- //footer -->
 
 <!-- login -->
